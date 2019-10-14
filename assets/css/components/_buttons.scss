@@ -2,7 +2,7 @@
     border: 0;
     -webkit-appearance: none;
     border-radius: $border-radius;
-    background: $primary;
+    background: color(primary, 500);
     padding: 1rem 2rem;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -13,6 +13,6 @@
     will-change: background;
 
     &:hover {
-        background: darken($color: $primary, $amount: 10%)
+        background: darken(color(primary, 500), 10%)
     }
-  }
+}
