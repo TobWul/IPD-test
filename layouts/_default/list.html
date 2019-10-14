@@ -1,3 +1,9 @@
 {{ define "main" }}
-This is the list file
+<div class="container">
+    {{ range .Pages }}
+    <div class="card">
+        <h1>{{.Title}}</h1>
+    </div>
+    {{ end }}
+</div>
 {{ end }}
