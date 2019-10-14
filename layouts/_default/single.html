@@ -1,12 +1,25 @@
 {{ define "main" }}
-{{.Content}}
-<form name="contact" method="POST" data-netlify="true">
-    <label for="tilbakemelding">
-        <input id="tilbakemelding" type="text" name="tilbakemelding" placeholder="tilbakemeldinger">
-    </label>
-    <label for="mer">
-        <input id="mer" type="text" name="mer" placeholder="Hva mer vil du vite?">
-    </label>
-    <button type="submit">Send</button>
-</form>
+<div id="sak">
+    <header>
+        <a class="tilbake" href="/">{{partial "icons/back" .}}Tilbake</a>
+        <h3>{{ .Params.title }}</h3>
+        <p>{{ .Params.date }}</p>
+        <p>{{ if eq .Params.vedtatt false }}{{partial "icons/close" . }}Nedstemt av studentene{{else}}{{partial "icons/check-badge" . }}Vedtatt og
+            gjennomført{{end}} </p>
+    </header>
+    <div class="container">
+        {{.Content}}
+        <form name="contact" method="POST" data-netlify="true">
+            <label for="tilbakemelding">
+                Hvordan ville du gitt tilbakemelding?
+                <input id="tilbakemelding" type="text" name="tilbakemelding">
+            </label>
+            <label for="mer">
+                Hva ville du lest mer om?
+                <input id="mer" type="text" name="mer">
+            </label>
+            <button class="button" type="submit">Send</button>
+        </form>
+    </div>
+</div>
 {{ end }}

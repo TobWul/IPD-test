@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
-.container {
-    padding: 5% 5% 10%;
+.container,
+header {
+    padding: 5% 5% 2rem;
+}
+
+svg {
+    width: 24px;
+    fill: currentColor;
+    stroke: currentColor;
 }

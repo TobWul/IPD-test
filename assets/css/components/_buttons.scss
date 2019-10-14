@@ -11,8 +11,22 @@
     cursor: pointer;
     transition: background 200ms ease-in-out;
     will-change: background;
+    color: white;
 
     &:hover {
         background: darken(color(primary, 500), 10%)
+    }
+}
+
+.tilbake {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+    svg {
+        margin-right: 1rem;
+        fill: currentColor;
+        stroke: currentColor;
     }
 }
