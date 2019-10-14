@@ -1,3 +1,7 @@
 {{ define "main" }}
-    
+    {{ range .Pages }}
+        <a href="{{ .Permalink }}" class="card">
+         {{ .Title }}
+        </a>
+    {{ end }}
 {{ end }}

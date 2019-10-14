@@ -1,3 +1,12 @@
 {{ define "main" }}
-    {{.Content}}
+{{.Content}}
+<form name="contact" method="POST" data-netlify="true">
+    <label for="tilbakemelding">
+        <input id="tilbakemelding" type="text" name="tilbakemelding" placeholder="tilbakemeldinger">
+    </label>
+    <label for="mer">
+        <input id="mer" type="text" name="mer" placeholder="Hva mer vil du vite?">
+    </label>
+    <button type="submit">Send</button>
+</form>
 {{ end }}
