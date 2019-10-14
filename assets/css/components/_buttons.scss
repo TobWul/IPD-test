@@ -1,0 +1,18 @@
+.button {
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: $border-radius;
+    background: $primary;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02%;
+    outline: 0;
+    cursor: pointer;
+    transition: background 200ms ease-in-out;
+    will-change: background;
+
+    &:hover {
+        background: darken($color: $primary, $amount: 10%)
+    }
+  }
