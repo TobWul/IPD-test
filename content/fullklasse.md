@@ -1,5 +1,5 @@
 ---
-title: "Fullt i 1.klasserommet"
+title: "Slå ned veggen mellom 133 og 136"
 date: 2019-10-15T10:17:42+02:00
 vedtatt: false
 draft: false
