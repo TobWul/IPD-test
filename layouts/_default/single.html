@@ -2,23 +2,28 @@
 <div id="sak">
     <header>
         <a class="tilbake" href="/">{{partial "icons/back" .}}Tilbake</a>
+        <br>
         <h3>{{ .Params.title }}</h3>
-        <p>{{ .Params.date }}</p>
-        <p>{{ if eq .Params.vedtatt false }}{{partial "icons/close" . }}Nedstemt av studentene{{else}}{{partial "icons/check-badge" . }}Vedtatt og
-            gjennomført{{end}} </p>
+        <p>{{ .Date.Day }}. {{ .Date.Month }} {{ .Date.Year }}</p>
+        <div {{ if eq .Params.vedtatt false }}>
+        {{ partial "icons/close" . }}Nedstemt av studentene
+        {{else}}class="vedtatt">
+        {{ partial "icons/checkbadge" . }}
+        Vedtatt og gjennomført{{end}}
+        </p>
     </header>
     <div class="container">
         {{.Content}}
         <form name="contact" method="POST" data-netlify="true">
             <label for="tilbakemelding">
                 Hvordan ville du gitt tilbakemelding?
-                <input id="tilbakemelding" type="text" name="tilbakemelding">
+                <textarea id="tilbakemelding" type="text" name="tilbakemelding"></textarea>
             </label>
             <label for="mer">
                 Hva ville du lest mer om?
-                <input id="mer" type="text" name="mer">
+                <textarea id="mer" type="text" name="mer"></textarea>
             </label>
-            <button class="button" type="submit">Send</button>
+            <button class="button" type="submit">Send inn</button>
         </form>
     </div>
 </div>

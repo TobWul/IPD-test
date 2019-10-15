@@ -2,5 +2,36 @@
     header {
         background: color(primary, 500);
         color: white;
+
+        div {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+
+
+            svg {
+                margin-right: 1rem;
+                stroke: color(warning, 300);
+            }
+
+            &.vedtatt svg {
+                stroke: color(success, 300);
+            }
+        }
+    }
+
+    .container {
+        p {
+            max-width: 70ch;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            margin-top: 4rem;
+        }
+
+        .button {
+            margin-top: 2rem;
+        }
     }
 }

@@ -11,7 +11,7 @@
     {{ $style := resources.Get "css/stylesheet.scss" | resources.ToCSS $options }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-    <title>Document</title>
+    <title>Svarig</title>
 </head>
 <body>
     {{ block "main" . }}

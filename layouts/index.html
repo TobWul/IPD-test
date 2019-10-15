@@ -1,7 +1,16 @@
 {{ define "main" }}
+<div class="container" id="index">
+    <img src="/img/svarig.svg" alt="Logo" id="logo">
     {{ range .Pages }}
-        <a href="{{ .Permalink }}" class="card">
-         {{ .Title }}
-        </a>
+    <a href="{{ .Permalink }}" class="card {{ if eq .Params.vedtatt true }}vedtatt{{end}}">
+        <h4>{{ .Title }}</h4>
+        <p>{{ .Date.Day }}. {{ .Date.Month }} {{ .Date.Year }}</p>
+        {{ if eq .Params.vedtatt true }}
+        {{partial "icons/checkbadge" . }}
+        {{else}}
+        {{partial "icons/close" . }}
+        {{end}}
+    </a>
     {{ end }}
+</div>
 {{ end }}

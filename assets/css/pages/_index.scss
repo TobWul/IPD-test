@@ -1,13 +1,26 @@
 #index {
-    header {
-        height: 100vh;
-        .punchline {
-            position: absolute;
-            bottom: 20%;
+    background-color: color(gray, 100);
+    min-height: 100vh;
+
+    #logo {
+        display: block;
+        margin: 5% auto 4rem;
+    }
+
+    .card {
+        svg {
+            stroke: color(warning, 400);
         }
-        img {
-            position: absolute;
-            right: 20%;
+
+        &.vedtatt svg {
+            stroke: color(success, 400);
         }
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2rem;
     }
 }
