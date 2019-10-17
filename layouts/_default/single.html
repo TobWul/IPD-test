@@ -16,15 +16,15 @@
     <div class="container">
         {{.Content}}
         <form name="contact" method="POST" data-netlify="true">
-            <label for="tilbakemelding">
-                Hvordan ville du gitt tilbakemelding?
-                <textarea id="tilbakemelding" type="text" name="tilbakemelding"></textarea>
-            </label>
             <label for="mer">
-                Hva ville du lest mer om?
+                Er det noe informasjon du savner i denne saken?
                 <textarea id="mer" type="text" name="mer"></textarea>
             </label>
-            <button class="button" type="submit">Send inn</button>
+            <label for="tilbakemelding">
+                Hvordan ville du delt dine meninger om denne saken?
+                <textarea id="tilbakemelding" type="text" name="tilbakemelding"></textarea>
+            </label>
+            <button class="button" type="submit">Send din tilbakemelding</button>
         </form>
     </div>
 </div>

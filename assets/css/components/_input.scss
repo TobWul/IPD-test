@@ -1,7 +1,11 @@
 form {
+    border-top: 1px solid color(gray, 300);
+    padding-top: 4rem;
+
     label {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         display: block;
+        margin-bottom: 2rem;
 
         input:not([type="submit"]),
         textarea {
@@ -17,6 +21,8 @@ form {
         textarea {
             resize: vertical;
             width: 100%;
+            max-width: 70ch;
+            min-height: 8rem;
         }
     }
 }
