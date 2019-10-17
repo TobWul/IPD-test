@@ -1,6 +1,6 @@
 ---
 title: "Info-skjerm i idecafeen"
-date: 2019-10-14T18:39:58+02:00
+date: 2019-03-21T18:39:58+02:00
 vedtatt: false
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Gratis Adobe-pakke for alle"
-date: 2019-10-15T10:19:15+02:00
+date: 2018-03-05T10:19:15+02:00
 vedtatt: true
 draft: false
 ---

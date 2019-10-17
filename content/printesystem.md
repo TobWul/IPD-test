@@ -1,6 +1,6 @@
 ---
 title: "Bytte av printersystem til sentralstyrt NTNU-system"
-date: 2019-10-15T10:18:46+02:00
+date: 2018-08-15T10:18:46+02:00
 vedtatt: true
 draft: false
 ---

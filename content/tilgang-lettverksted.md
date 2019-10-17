@@ -1,6 +1,6 @@
 ---
 title: "Tilgang til lettverkstedet på arkitekt"
-date: 2019-10-15T10:04:01+02:00
+date: 2017-11-16T18:39:58+02:00
 vedtatt: true
 draft: false
 ---
