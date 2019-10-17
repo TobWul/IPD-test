@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147736726-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-147736726-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-147736726-1');
+      gtag("config", "UA-147736726-1");
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Fjord+One|IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjord+One|IBM+Plex+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:title" content="{{ block "title" .}}{{end}}" />
+    <meta property="og:image" content="https://keen-mahavira-8f0edf.netlify.com/static/img/Svarig.png" />
 
     <!-- Css -->
     {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/myscss")) }}
     {{ $style := resources.Get "css/stylesheet.scss" | resources.ToCSS $options }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
     <title>Svarig</title>
-</head>
+  </head>
 
-<body>
+  <body>
     {{ block "main" . }}
     {{ end }}
-</body>
-
+  </body>
 </html>
