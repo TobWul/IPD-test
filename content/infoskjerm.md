@@ -7,12 +7,16 @@ draft: false
 
 #### Hva
 
-Forslag om å slå ned veggen mellom rom 133 (2. klasserommet) og rom 136 for å lage et stort klasserom.
+Informasjonsskjerm i Idecafeen der det opplyses om arrangementer, gjesteforelesninger, prosjekter etc.
 
 #### Hvorfor
 
-Rekordhøyt antall studenter i 1. klasse medfører at det er trangt i klasserommet og luftkvaliteten blir dårlig.
+Forbedre informasjonsflyten ut mot studentene.
 
 #### Hvordan
 
-Etter veggen har blitt slått ned flytter 2. klasse opp, og 1. klasse ned til det nye rommet 269.
+Skjermen vil driftes i samråd mellom instituttet og studentene.
+
+#### Resultat
+
+Nedstemt av studentene. Kan gjenåpnes.
